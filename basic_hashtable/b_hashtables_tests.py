@@ -25,7 +25,7 @@ class TestBasicHashTable(unittest.TestCase):
 
         hash_table_insert(ht, "key-0", "new-val-0")
         return_value = hash_table_retrieve(ht, "key-0")
-        self.assertTrue(return_value == "new-val-0")
+        self.assertEqual(return_value , "new-val-0")
 
     def test_hash_table_removal(self):
         ht = BasicHashTable(8)
